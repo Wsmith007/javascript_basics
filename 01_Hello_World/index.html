@@ -1,13 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script>
       // JavaScript function definition here
+	  var cars = ["Honda", "Toyota", "Ford", "Nissan"];
+	  function myFunction(){
+	  for (i = 0; i < cars; i++) {
+	  var temp = cars[i];
+	  document.getElementById("car").innerHTML = temp;
+			}
+	  }
+	   
     </script> 
   </head>
   
   <body>
     <!-- Your page here (can include more script tags) -->
+	
+<div class="container">
+  <h2>Mambo5</h2>
+  <p id="car"></p>
+  <button type="button" class="btn-lg" onclick="myFunction()">Show Cars..?</button>
+  <h3>I dont know what I'm doing...</h3>
+</div>
+
     
   </body>
 </html>
